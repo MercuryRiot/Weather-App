@@ -1,0 +1,126 @@
+/* General styling */
+body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .container {
+    width: 80%; /* Adjust for narrower content */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading and input */
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #city-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  #get-weather-btn {
+    background-color: #4CAF50; /* Green for "go" */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Weather information container */
+  .weather-info {
+    margin-top: 20px;
+    display: none; /* Initially hidden, displayed later */
+  }
+  
+  /* Location and time */
+  .location-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Current weather details */
+  .current-weather {
+    display: flex;
+    align-items: center;
+  }
+  
+  #weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .temp-details {
+    font-size: 24px; /* Larger for better readability */
+  }
+  
+  .additional-details {
+    margin-top: 10px;
+  }
+  
+  .additional-details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Forecast list */
+  .forecast-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .forecast-item {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 10px;
+    display: inline-block; /* Horizontal display for items */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    #city-input {
+      width: 100%;
+    }
+  
+    .forecast-list {
+      flex-direction: column; /* Stack items on smaller screens */
+    }
+  }
+
+  /* Styles for forecast items */
+.forecast-item {
+    /* Existing styles for layout and spacing */
+    display: block; /* Ensure visibility */
+  }
+  
+  .forecast-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .forecast-item .day {
+    display: block; /* Ensure visibility */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .forecast-item .temp {
+    display: block; /* Ensure visibility */
+    font-size: 18px;
+  }
+  
