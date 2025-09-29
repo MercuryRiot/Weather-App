@@ -1,6 +1,6 @@
 # Weather-App
 
-A simple web application for checking and displaying weather information for any location. The app is built using modern web technologies: **JavaScript**, **CSS**, and **HTML**.
+A simple web application for checking and displaying weather information for any location.
 
 ## Features
 
